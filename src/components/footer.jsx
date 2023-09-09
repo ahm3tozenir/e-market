@@ -1,8 +1,17 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faInstagram, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 
 function Footer() {
+
+	let location = useLocation();
+	if(location.pathname === '/404'){
+	  return null;
+	}else{
+
+
+
   return (
 <footer className="text-gray-600 body-font">
   <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
@@ -105,7 +114,7 @@ function Footer() {
     </div>
   </div>
 </footer>
-  )
+  )}
 }
 
 export default Footer
