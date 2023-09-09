@@ -13,7 +13,7 @@ function Index() {
     <div>
       <Hero />
 
-      <div className='columns-3 bg-red-500 gap-10'>
+      <div className='columns-3 p-5 bg-red-500'>
           <Card/>
  
 

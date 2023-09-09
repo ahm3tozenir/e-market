@@ -9,10 +9,6 @@ function MainNavigate() {
 
   const [show,setShow] = useState(false)
 
-  useEffect(()=>{
-    
-  },[show])
-
 
   return (
     <div className='flex justify-between items-center'>
