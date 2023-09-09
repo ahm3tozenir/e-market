@@ -10,7 +10,6 @@ function Basket() {
   const [sepet,setSepet] = useState(getArr)
 
   function deleteHandler(event,i){
-    console.log(event.target.parentElement)
     let newArr = [...sepet]
     newArr.splice(i,1)
     setSepet(newArr)
@@ -20,10 +19,16 @@ function Basket() {
     localStorage.setItem('arr',JSON.stringify(sepet))
   },[sepet])
 
+  let nakliye = 0
+
   let total = 0
   sepet.map((e)=>{
-    total += Number(e[2])
+    total = total+(e.price*e.count)
   })
+
+  if(total<150){
+    nakliye = 19.99
+  }
 
   function increaseHandler(event,i){
     let adet = Number(event.target.parentElement.lastChild.previousElementSibling.value)
@@ -74,22 +79,22 @@ function Basket() {
 
       <div className="mt-6 h-full rounded-lg border bg-white p-6 shadow-md md:mt-0 md:w-1/3">
         <div className="mb-2 flex justify-between">
-          <p className="text-gray-700">Subtotal</p>
-          <p className="text-gray-700">$129.99</p>
+          <p className="text-gray-700">Ürünlerin Toplamı</p>
+          <p className="text-gray-700">{total}$</p>
         </div>
         <div className="flex justify-between">
-          <p className="text-gray-700">Shipping</p>
-          <p className="text-gray-700">$4.99</p>
+          <p className="text-gray-700">Kargo</p>
+          <p className="text-gray-700">{nakliye===0?'ücretsiz kargo':nakliye}$</p>
         </div>
         <hr className="my-4" />
         <div className="flex justify-between">
-          <p className="text-lg font-bold">Total</p>
+          <p className="text-lg font-bold">Toplam</p>
           <div className="">
-            <p className="mb-1 text-lg font-bold">$134.98 USD</p>
-            <p className="text-sm text-gray-700">including VAT</p>
+            <p className="mb-1 text-lg font-bold">{(total+nakliye).toFixed(2)}$</p>
+            <p className="text-sm text-gray-700">KDV dahildir</p>
           </div>
         </div>
-        <button className="mt-6 w-full rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600">Check out</button>
+        <button className="mt-6 w-full rounded-md bg-blue-500 py-1.5 font-medium text-blue-50 hover:bg-blue-600">Ödeme Yap</button>
       </div>
     </div>
 
