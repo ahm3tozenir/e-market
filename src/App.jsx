@@ -8,20 +8,24 @@ import Subs from "./pages/subs";
 import Faq from "./pages/faq";
 import Login from './pages/login'
 import Register from "./pages/register"
+import ProductDetail from "./pages/productDetail"
 import Index404 from "./pages/index404";
+import { useState } from "react";
 
 
 
 function App() {
+
   return (
     <>
-      <Nvbr/>
+      <Nvbr />
       <Routes>
         <Route path="/" element={<Index/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/sepetim" element={<Basket/>}/>
         <Route path="/faq" element={<Faq/>}/>
         <Route path="/subscription" element={<Subs/>}/>
+        <Route path="/productdetail" element={<ProductDetail/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/404" element={<Index404/>}/>

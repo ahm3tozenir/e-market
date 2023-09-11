@@ -10,10 +10,10 @@ function Index() {
 
 
   return (
-    <div>
+    <div className='bg-gradient-to-r from-fuchsia-500 to-cyan-500'>
       <Hero />
 
-      <div className='columns-1 md:columns-2 lg:columns-3 p-5 bg-red-500'>
+      <div className='columns-1 md:columns-2 lg:columns-3 p-5 bg-gradient-to-r from-slate-300 to-slate-500'>
           <Card/>
  
 

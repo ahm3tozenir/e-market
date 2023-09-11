@@ -17,7 +17,7 @@ function Footer() {
   <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
       <p className="flex title-font font-medium items-center md:justify-start justify-center text-white">
-        <span className="ml-3 text-xl">Vice E-Market</span>
+        <span className="ml-3 text-xl bg-gradient-to-r from-fuchsia-500 to-cyan-500 bg-clip-text text-transparent">Vice E-Market</span>
         <Link to={'/'} className="text-3xl font-bold leading-none">
 			    <img className={`w-20`} src="./img/navimg.png" alt="" />
 		    </Link>
@@ -26,7 +26,7 @@ function Footer() {
     </div>
     <div className="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Elektronik</h2>
+        <h2 className="title-font font-medium bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent tracking-widest text-sm mb-3">Elektronik</h2>
         <nav className="list-none mb-10">
           <li>
             <p className="text-gray-600 cursor-pointer hover:text-gray-800">Telefon</p>
@@ -43,7 +43,7 @@ function Footer() {
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Giyim</h2>
+        <h2 className="title-font font-medium bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent tracking-widest text-sm mb-3">Giyim</h2>
         <nav className="list-none mb-10">
           <li>
             <p className="text-gray-600 cursor-pointer hover:text-gray-800">Erkek Giyim</p>
@@ -60,7 +60,7 @@ function Footer() {
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Spor</h2>
+        <h2 className="title-font font-medium bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent tracking-widest text-sm mb-3">Spor</h2>
         <nav className="list-none mb-10">
           <li>
             <p className="text-gray-600 cursor-pointer hover:text-gray-800">Gym ekipmanları</p>
@@ -77,16 +77,16 @@ function Footer() {
         </nav>
       </div>
       <div className="lg:w-1/4 md:w-1/2 w-full px-4">
-        <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">Kitap</h2>
+        <h2 className="title-font font-medium bg-gradient-to-b from-gray-400 to-gray-300 bg-clip-text text-transparent tracking-widest text-sm mb-3">Kitap</h2>
         <nav className="list-none mb-10">
           <li>
             <p className="text-gray-600 cursor-pointer hover:text-gray-800">Bilim</p>
           </li>
           <li>
-            <p className="text-gray-600 cursor-pointer hover:text-gray-800">Tarih</p>
+            <p className="text-gray-600 cursor-pointer hover:text-gray-800">Felsefe</p>
           </li>
           <li>
-            <p className="text-gray-600 cursor-pointer hover:text-gray-800">Felsefe</p>
+            <p className="text-gray-600 cursor-pointer hover:text-gray-800">Tarih</p>
           </li>
         </nav>
       </div>
